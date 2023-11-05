@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Akira';
+    src: url(assets/fonts/akira.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Scene Pro', sans-serif;
+}
+
+:root{
+    --bg-color: #f0eee2;
+    --text-color: #f0eee2;
+    --main-color: #0058aa;
+    --second-color: #394149;
+    --big-font: 4rem;
+    --h2-font: 2rem;
+    --p-font: 1.1rem;
+}
+
+body{
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+}
+
+nav,
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding-right: 4vh;
+  justify-content: space-between;
+  position: relative;
+}
+
+nav {
+  align-items: center;
+  position: absolute;
+  height: 6vh;
+  width: 100%;
+  padding-left: 4vh;
+  transition: .3s;
+  background-color: transparent;
+}
+
+li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+  font-weight: 700;
+  padding: 8px 10px;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    bottom: -9px;
+    left: 0;
+    transition: ease .4s;
+}
+
+.nav-links a:hover{
+    color: var(--main-color);
+}
+
+.nav-links a:hover::after{
+    width: 100%;
+}
+
+.nav-logo img{
+    max-width: 100%;
+    width: 110px;
+    height: auto;
+}
+
+section {
+    height: 100vh;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+#home{
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.home-container{
+    background-color: #0058aa;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    position: relative;
+}
+
+.home-container svg{
+    align-self: baseline;
+    position: absolute;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 116px;
+    transform: rotateY(180deg);
+}
+
+.home-container .shape-fill{
+    fill: var(--bg-color);
+}
+
+.home-box{
+    align-self: center;
+   justify-content: center;
+}
+
+.home-text h2{
+    font-family: 'Akira';
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+}
+
+.home-box p{
+    text-align: center;
+    font-weight: 600;
+    font-size: var(--p-font);
+    color: white;
+}
+
