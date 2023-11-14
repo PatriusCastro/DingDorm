@@ -98,7 +98,7 @@ section {
 }
 
 .home-container {
-  background-color: #0058aa;
+  background-color: var(--main-color);
   height: 100%;
   width: 100%;
   display: flex;
@@ -129,21 +129,19 @@ section {
   font-family: "Akira";
   font-size: 2.5rem;
   text-align: center;
-  color: white;
+  color: var(--text-color);
 }
 
 .home-box p {
   text-align: center;
   font-weight: 600;
   font-size: var(--p-font);
-  color: white;
+  color: var(--text-color);
 }
 
 .cards-container{
-    width: 100%;
-    bottom: 0;
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   position: relative;
 }
@@ -154,11 +152,8 @@ section {
   width: 350px;
   border-radius: 20px;
   display: flex;
-  flex-wrap: wrap;
   position: relative;
-  justify-content: center;
-  align-items: center;
-  margin: 50px auto 0px auto;
+  margin-top: 5rem;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -170,8 +165,8 @@ section {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: rgba(0, 88, 170, 0.90);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #0058aae6;
+    box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .card-text h3{
